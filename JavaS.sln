@@ -3,25 +3,24 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32407.337
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JavaS", "..\..\..\..\..\repositorios\JavaS\", "{C0B7152F-AAC0-4B32-A881-78AF2C79EA72}"
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "js", "js\", "{0B67DC60-0C98-46B8-9807-A00074361A5B}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		Debug.AspNetCompiler.VirtualPath = "/localhost_61767"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\..\..\..\repositorios\JavaS\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61767\"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_64871"
+		Debug.AspNetCompiler.PhysicalPath = "js\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64871\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/localhost_61767"
-		Release.AspNetCompiler.PhysicalPath = "..\..\..\..\..\repositorios\JavaS\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_61767\"
+		Release.AspNetCompiler.VirtualPath = "/localhost_64871"
+		Release.AspNetCompiler.PhysicalPath = "js\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_64871\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "61767"
-		SlnRelativePath = "..\..\..\..\..\repositorios\JavaS\"
+		VWDPort = "64871"
 	EndProjectSection
 EndProject
 Global
@@ -29,8 +28,8 @@ Global
 		Debug|Any CPU = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C0B7152F-AAC0-4B32-A881-78AF2C79EA72}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0B7152F-AAC0-4B32-A881-78AF2C79EA72}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B67DC60-0C98-46B8-9807-A00074361A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B67DC60-0C98-46B8-9807-A00074361A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
