@@ -21,6 +21,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "JavaS", "..\..\..\..\..\rep
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "61767"
+		SlnRelativePath = "..\..\..\..\..\repositorios\JavaS\"
 	EndProjectSection
 EndProject
 Global
