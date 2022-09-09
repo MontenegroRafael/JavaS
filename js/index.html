@@ -6,34 +6,76 @@
     <script src="app/Index.js"></script>
 </head>
 <body>
-    <!--<div name="formulario-inicial" id="form" class="formularios">-->
-        <!--<label for="nome">Nome:</label>-->
-        <!--<input id="nome" placeholder="Nome" class="entrada" value="" />-->
-        <!--<label for="idade">Idade:</label>-->
-        <!--<input id="idade" placeholder="Idade" class="entrada" />
-        <input type="date" /><br>
-        <input type="email" placeholder="E-mail" />
-        <input type="button" onclick="onClickSalvar()" value="Salvar" /><br>-->
-        <!--<input type="checkbox" /><br>
-        <input type="color" /><br>-->
-    <!--</div>-->
-    <!--<div id="dadosSalvos">
+    <div name="formulario-inicial" id="form" class="formularios">
+        <label for="nome">Nome:</label>
+        <input id="nome" placeholder="Nome" class="entrada" value="" />
+        <br>
+        <label for="idade">Idade:</label>
+        <input id="idade" placeholder="Idade" class="entrada" />
+        <!-- <input type="date" /><br> -->
+        <!-- <input type="email" placeholder="E-mail" /> -->
+        
+        <input type="button" onclick="onClickSalvar()" value="Salvar" />
+        <br>------------------------------------------------------------
+        <!-- <input type="checkbox" /><br>
+        <input type="color" /><br> -->
+    </div>
+    <div id="dadosSalvos">
         <input id="nomeSalvo" disabled />
         <input id="idadeSalva" disabled />
-    </div>-->
-
-    <div id="soma">
-        <label for="operacao">Digite os números e escolha a Operação</label>
-        <br>
-        <input id="n1" placeholder="Espaço 1" class="entrada" value="" />
-        <input id="n2" placeholder="Espaço 2" class="entrada" value="" />
-        <br>
-        <input type="button" onclick="calculadora()" value="+" />
-        <input type="button" onclick="calculadora()" value="-" />
-        <input type="button" onclick="calculadora()" value="/" />
+        <br>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
     </div>
 
-    
 
+
+    <div>
+        Numero 1:<input id="n1" type="number"> <br />
+        Numero 2:<input id="n2" type="number"> <br />
+        <input type="radio" name="calc" id="soma"/> Soma<br />
+        <input type="radio" name="calc" id="subtracao"/> Subtração<br />
+        <input type="radio" name="calc" id="multiplicacao"/> Multiplicação<br />
+        <input type="radio" name="calc" id="divisao"/> Divisão<br />
+        <button onclick="operacao()">Calcular</button><br />
+
+
+        <!-- <input id="n1" placeholder="..." class="entrada" value="" />
+        <label for="n2">Numero 2:</label>
+        <input id="n2" placeholder="..." class="entrada" value="" />
+        <input type="button" onclick="onClickSomar()" value="Calcular" /> -->
+        <br>------------------------------------------------------------
+    </div>
+    Resposta: <div id="resp"></div>
+
+    <!-- <div id="resposta">
+        <label for="n1">Resposta:</label>
+        <input id="respostaPronta" disabled />
+    </div> -->
+
+    <div>
+        <br>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+    </div>
+    <input id="nome1" class="entrada"/>=>Nome<br />
+    <input id="data" class="entrada"/>=>Data de Nascimento<br />
+    <input id="naturalidade" class="entrada"/>=>Naturalidade<br />
+    <input id="nomedopai" class="entrada"/>=>Nome do Pai<br />
+    <input id="nomedomae" class="entrada"/>=>Nome do Mae<br />
+    <input type="button" onclick="onClickSalvar1()" value="Salvar1" />
+
+    </div>
+
+    <div id="dadosSalvos1">
+        <br>=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+        <input id="nomeSalvo" disabled /><br />
+        <input id="dataSalva" disabled /><br />
+        <input id="naturaSalvo" disabled /><br />
+        <input id="paiSalva" disabled /><br />
+        <input id="maeSalva" disabled /><br />
+    </div>
+
+    <div>
+        <input type="text">
+    </div>
+
+   
 </body>
     </html>

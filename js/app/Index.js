@@ -23,43 +23,72 @@
     div.innerHTML = ' <input disabled value = "' + pessoa.nome + '" />' +
         ' <input disabled value = "' + pessoa.idade + '" /> '
 }
-//function somar() {
 
-//    let campoN1 = document.querySelector('#n1');
-//    let campoN2 = document.querySelector('#n2');
+function operacao()
+{
+    var resp = document.getElementById('resp');
+    var n1 = parseFloat(document.getElementById("n1").value);
+    var n2 = parseFloat(document.getElementById("n2").value);
+    var mostar='';
 
-//    if (!campoN1.value) {
-//        alert('Espaço 1 não preenchido;');
-//        return;
-//    }
+    if(document.getElementById('soma').checked)
+    mostar = soma(n1, n2);
 
-//    if (!campoN2.value) {
-//        alert('Espaço 2 não preeenchida.');
-//        return;
-//    }
+    if(document.getElementById('subtracao').checked)
+    mostar = subtracao(n1, n2);
 
-//    var operacao = {
-//        n1: campoN1.value,
-//        n2: campoN2.value
-//    };
+    if(document.getElementById('multiplicacao').checked)
+    mostar = multiplicacao(n1, n2);
 
-//    let div = document.querySelector('#operacaoSoma');
+    if(document.getElementById('divisao').checked)
+    mostar = divisao(n1, n2);
 
-//    div.innerHTML = ' <input disabled value = "' + operacao.n1 + '" />' +
-//        ' <input disabled value = "' + operacao.n2 + '" /> '
-//}
-
-function calculadora(e){
-
-    var operacao = e.value;
-
-    var n1 = parseFloat(document.getElementById("#n1").value);
-    var n2 = parseFloat(document.getElementById("#n2").value);
-
-    var calculo = eval(n1 + operacao + n2);
-
-    if (!isNaN(calculo)) {
-        alert(calculo);
-    }
-
+    resp.innerHTML = mostar;
 }
+
+function soma(x, y)
+{
+  return (x+y);
+}
+
+function subtracao(x, y)
+{
+  return (x-y);
+}
+
+function multiplicacao(x, y)
+{
+  return (x*y);
+}
+
+function divisao(x, y)
+{
+  return (x/y);
+}
+
+function onClickSalvar1() {
+
+    let campoNome = document.querySelector('#nome1');
+    let campoData = document.querySelector('#data');
+    let campoNatura = document.querySelector('#naturalidade');
+    let campoPai = document.querySelector('#nomedopai');
+    let campoMae = document.querySelector('#nomedomae');
+
+   
+    var pessoa1 = {
+        Nome: campoNome.value,
+        Data: campoData.value,
+        Natura: campoNatura.value,
+        Pai: campoPai.value,
+        Mae: campoMae.value
+    };
+
+    let div2 = document.querySelector('#dadosSalvos1');
+
+    div2.innerHTML = ' <input disabled value = "' + pessoa1.Nome + '" /><br >' +
+        ' <input disabled value = "' + pessoa1.Data + '" /><br > '+
+        ' <input disabled value = "' + pessoa1.Natura + '" /><br > '+
+        ' <input disabled value = "' + pessoa1.Pai + '" /><br > '+
+        ' <input disabled value = "' + pessoa1.Mae + '" /> '
+}
+
